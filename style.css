@@ -6,11 +6,22 @@ body {
 }
 
 .entete{
-  background-color: hotpink;
+ /* display: block;*/
+
+  background: linear-gradient(45deg, pink, red,green,pink);
+  height: 200px;
+}
+
+.logo p{
+  text-align: center;
+  color: white;
 }
 .titre{
   text-align: center;
   color: mediumvioletred;
+}
+.category{
+  margin-left: 20px;
 }
 
 /*
@@ -20,7 +31,7 @@ body {
 */
 div.robes{
   display:grid;
-  grid-template-rows: 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr;*/
   grid-template-columns: 1fr 1fr 1fr;
 }
 .robe{
@@ -30,14 +41,13 @@ div.robes{
   
 }
 
-div>img{
-  
+div.robe a img{
+  display: block;
   width: 100%;
 }
 
-p{
+div.details{
   text-align: center;
-  color: white;
   background-color: darkred;
 
 }
@@ -46,4 +56,14 @@ p{
   background-color: darkred;
   width: 100%;
   height: 200px;
+  color: white;
+}
+
+@media screen and (max-width:600px){
+  div.robes {
+    display: grid;
+    /*grid-template-rows: 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr;
+  }
+  
 }

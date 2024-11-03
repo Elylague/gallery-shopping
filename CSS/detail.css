@@ -1,0 +1,29 @@
+div{
+  text-align: center;
+  border: 10px black solid;
+  border-radius: 30px;
+  
+}
+img{
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  
+  
+}
+
+ul.liste-detail li{
+  margin: 0;
+  width: 150px;
+  
+  
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
